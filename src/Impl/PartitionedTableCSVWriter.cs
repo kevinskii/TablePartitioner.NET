@@ -224,8 +224,7 @@ namespace PartitionedTableWriter.Impl {
                 // Get the data from this subtable and compute a unique hash of the column headers. This hash will be used to
                 // differentiate between subtables which may lie on the same partition path, but which have different
                 // schemas (i.e. the columns are different). Although a subtable's schema will almost always remain
-                // constant across Flushes, we can't assume this because columns are dynamically added. There are also cases
-                // in the SJM product line where two devices of the same model may have slightly different parameters.
+                // constant across Flushes, we can't assume this because columns are dynamically added.
                 var tableData = kvp.Value.Flush(distinctValues);
                 var sanitizedColumnNames = tableData.ColumnNames.Select(name => name.Replace(',', '_').Replace('\n', '_').Replace(' ', '_').Replace("\"", ""));
                 var headerStr = String.Join(",", sanitizedColumnNames);
