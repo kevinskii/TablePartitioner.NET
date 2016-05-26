@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionedTableWriter", "src\PartitionedTableWriter.csproj", "{12650944-BC84-43C0-978F-2EBB40763CBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionedTableWriter_UnitTests", "tests\PartitionedTableWriter_UnitTests.csproj", "{CCECDE13-83AB-447F-9B5E-06A6910E5358}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12650944-BC84-43C0-978F-2EBB40763CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12650944-BC84-43C0-978F-2EBB40763CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12650944-BC84-43C0-978F-2EBB40763CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12650944-BC84-43C0-978F-2EBB40763CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCECDE13-83AB-447F-9B5E-06A6910E5358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCECDE13-83AB-447F-9B5E-06A6910E5358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCECDE13-83AB-447F-9B5E-06A6910E5358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCECDE13-83AB-447F-9B5E-06A6910E5358}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
