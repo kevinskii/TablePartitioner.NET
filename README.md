@@ -12,7 +12,7 @@ male | CN | 25 | 196
 female | JPN | 49 | 118
 ... | ... | ... | ...
 
-If this table is stored in a single CSV file and analyzed using a tool like Apache Hive or Spark, the entire file will need to be processed everytime a query is run. To avoid this, Hive and Spark (and others) support a partitioning scheme that allows the table to be split on fields that contain enumerated values.
+If this table is stored in a single CSV file and analyzed using a tool like Apache Hive or Spark, the entire file will need to be processed every time a query is run. To avoid this, Hive and Spark (and others) support a partitioning scheme that allows the table to be split on fields that contain enumerated values.
 
 For example, splitting the table on the "gender" and "country" fields will result in the following directory structure:
 
@@ -50,7 +50,7 @@ The writer saves memory by run-length encoding each column internally. The Flush
 ## Example
 
 	using PartitionedTableWriter.Impl;
-	using PartitionedTableWriter.Impl;
+	using PartitionedTableWriter.Interfaces;
 
 	// Create the writer
 	string[] keyColumns = { "ID" };
