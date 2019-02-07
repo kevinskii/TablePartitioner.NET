@@ -39,10 +39,10 @@ Where each data.csv file only contains the remaining "age" and "weightLBS" field
 
 (Please see the Apache Spark Parquet documentation at http://spark.apache.org/docs/latest/sql-programming-guide.html#parquet-files for more details.)
 
-##Building
+## Building
 Open the TablePartitioner.sln file in Visual Studio 2015 or later and build the main project and unit tests.
 
-##How To Use
+## How To Use
 To write partitioned tables, the entire schema doesn't need to be known ahead of time. Only the partitioning columns need to be defined, and optionally a set of "key" columns. The key columns are written on the left-most side, while all other columns are written in alphabetical order. The columns in each row can vary as long as the partition and key columns are present.
 
 The writer saves memory by run-length encoding each column internally. The Flush() function should be called every *n* rows to write the accumulated data to disk and clear memory. The size of *n* depends largely on the amount of RAM on the system, the amount of variation across rows, and whether or not parallel writer processes are running.
