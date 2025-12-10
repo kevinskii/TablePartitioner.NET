@@ -2,6 +2,8 @@
 ## Overview
 Provides a set of .NET utilities for writing data in a Apache Hive-style partitioned table format.
 
+*[Note: This repo was created long before the inception of Apache Parquet, which has since become a standard for columnar data compression.]*
+
 ## Description
 Consider a multi-terabyte table that contains the following rows:
 
